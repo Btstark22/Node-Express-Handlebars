@@ -13,8 +13,6 @@ router.post("/api/burgers", function (req, res) {
 });
 
 router.get("/", function (req, res) {
-    console.log("res: "+res);
-    
     burger.read(function (data) {
         const burgers = {
             burgers: data
