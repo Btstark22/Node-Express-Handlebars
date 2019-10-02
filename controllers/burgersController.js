@@ -3,7 +3,7 @@ const burger = require("../models/burger.js");
 
 router.post("/api/burgers", function (req, res) {
     burger.create([
-        "name", "devoured"
+        "burger_name", "devoured"
     ], [
         //comes from the front end
         req.body.name, req.body.devoured
